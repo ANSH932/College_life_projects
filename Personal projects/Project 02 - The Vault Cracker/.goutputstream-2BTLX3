@@ -1,0 +1,39 @@
+#include <stdio.h>
+int main()
+{
+	int a, b, c, d, e;
+	printf("Enter the pin: ");
+	scanf("%d%d%d%d%d", &a, &b, &c, &d, &e);	
+	if ((a>=0 && a<=9) && (b>=0 && b<=9) && (c>=0 && c<=9) && (d>=0 && d<=9) && (e>=0 && e<=9))
+	{
+		if (a%2==0 && e%2!=0 && b+c==d && (a*10000+b*1000+c*100+d*10+e)%5==0)
+		{
+			printf("Vault Open!\n");
+		}
+		else
+		{
+			printf("Alarm Triggered because ");
+			if (a%2!=0)
+			{
+				printf("the first digit is not even!\n");
+			}
+			else if (e%2==0)
+			{
+				printf("the last digit is not odd!\n");
+			}
+			else if (b+c!=d)
+			{
+				printf("the sum of second and third digit is not equals the fourth digit!\n");
+			}
+			else if ((a*10000+b*1000+c*100+d*10+e)%5!=0)
+			{
+				printf("the PIN is not divisible of 5!\n");
+			}
+		}
+	}
+	else 
+	{
+		printf("Alarm Triggered because the password is excedding 5 digits!\n");
+	}
+	return 0;
+}

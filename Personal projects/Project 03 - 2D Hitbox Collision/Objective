@@ -1,0 +1,5 @@
+The Mission: You are building the collision detection for a 2D game. Ask the user for the coordinates of two rectangles.
+For Rectangle 1: Input the X and Y coordinates of its bottom-left corner, then the X and Y of its top-right corner.
+For Rectangle 2: Do the exact same thing.
+
+Calculate whether these two rectangles are overlapping, touching exactly on a single edge, or completely missing each other. Print the result.

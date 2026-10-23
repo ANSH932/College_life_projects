@@ -1,0 +1,9 @@
+The Mission: The user acts as a bank robber trying to open a digital vault. Ask them to input a single 5-digit integer pin (e.g., 84215). The vault only opens if the PIN meets a strict set of security rules.
+
+The Rules:
+* The first digit must be even.
+* The last digit must be odd.
+* The sum of the second and third digits must perfectly equal the fourth digit.
+* The entire 5-digit number must be a multiple of 5.
+
+If all conditions are met, print "VAULT OPEN". If even one fails, print "ALARM TRIGGERED" and tell them exactly which rule they failed first.

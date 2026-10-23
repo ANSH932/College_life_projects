@@ -1,0 +1,10 @@
+The Mission: Write a system that calculates a freelancer's final take-home pay. Ask the user for three things: Total Yearly Income (Real Constant / float), their Age (Integer), and their VIP Status (Character: 'Y' or 'N').
+
+The Rules:
+* If income is under 300,000: 0% tax.
+* Between 300,001 and 700,000: 10% tax on the amount above 300k.
+* Above 700,000: 20% tax on the amount above 700k, PLUS a flat 40,000 penalty.
+* Age Modifier: If the user is 60 or older, reduce their final calculated tax amount by 5,000 (but tax cannot drop below 0).
+* VIP Modifier: If they are a VIP ('Y'), apply a 5% surcharge on whatever the tax amount is (calculated after the age modifier).
+
+Print the Gross Income(Total income before tax dedutction), Total Tax Deducted, and Final Take-Home Pay formatted cleanly.
