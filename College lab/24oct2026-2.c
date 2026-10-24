@@ -56,5 +56,6 @@ int main()
 	{
 		printf("x%d 1 Rupees\n", amount);
 	}
+	/*Done*/
 	return 0;
 }
