@@ -40,7 +40,7 @@ int main()
 	if (amount>=10 && amount<20)
 	{
 		printf("x%d 10 Rupees\n", amount/10);
-		amount = amount/10;
+		amount = amount%10;
 	}
 	if (amount>=5 && amount<10)
 	{

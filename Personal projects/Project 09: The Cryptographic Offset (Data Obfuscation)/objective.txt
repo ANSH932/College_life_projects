@@ -1,0 +1,10 @@
+Before modern encryption, militaries used substitution ciphers to hide messages. You will encrypt a single character by shifting its ASCII value.
+
+
+● The Task: Ask the user for a single uppercase letter ('A' to 'Z') and a secret "shift key" (an integer from 1 to 5).
+
+
+● The Math: Add the shift key directly to the character. If the user types 'A' and the key is 3, the output must be 'D'.
+
+
+● The Trap: If the user types 'Y' and the key is 3, simply adding 3 results in the ASCII character \, which is not a letter. You must use an if statement to detect if the shifted value exceeds 'Z' (ASCII 90). If it does, mathematically force it to wrap back around to the start of the alphabet (e.g., 'Y' + 3 should output 'B').

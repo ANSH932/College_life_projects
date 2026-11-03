@@ -1,0 +1,10 @@
+Authentication systems rarely store your raw PIN. Instead, they extract digits, run mathematical formulas, and compare the result.
+
+
+● The Task: Ask the user for a 4-digit security PIN (e.g., 8424).
+
+
+● The Math: You cannot use loops to read the digits. You must use your ATM state machine logic (integer division / and modulo %) to rip the 4-digit integer apart into four separate variables: d1, d2, d3, and d4.
+
+
+● The Filter: Access is only granted if the PIN passes a mathematical hash check. The sum of the first and last digits must exactly equal the product of the middle two digits (e.g., in 8424, 8+4 = 12, and 42 = 8. This would fail. But 4335 would pass because 4+5 = 9, and 33 = 9). 

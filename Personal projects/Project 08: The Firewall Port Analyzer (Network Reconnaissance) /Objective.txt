@@ -1,0 +1,24 @@
+A firewall inspects incoming traffic and drops unauthorized connections. You are building the core filtering logic using a switch statement.
+
+
+● The Task: Ask the user to input a target port number (integer) and a protocol type
+(character: 'T' for TCP, 'U' for UDP).
+
+
+● The Architecture: Pass the port number into a switch statement.
+
+
+● The Filter:
+
+○ case 21: (FTP) - Print "VULNERABLE: Unencrypted File Transfer Detected. Connection Dropped."
+
+○ case 22: (SSH) - Use an inner if to check the protocol. If it is 'T', print "Secure Shell connection allowed." If 'U', print "Anomaly detected. UDP not supported for SSH. Dropping."
+
+○ case 80: (HTTP) - Print "VULNERABLE: Cleartext web traffic."
+
+○ case 443: (HTTPS) - Print "Secure web traffic allowed."
+
+○ default: - Print "PORT CLOSED: Traffic blocked by default."
+
+
+● The Trap: You must clear the input buffer flawlessly between capturing the integer and the character, and your switch must use break to prevent fallthrough.
