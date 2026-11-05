@@ -5,7 +5,7 @@ int main()
 	printf("Enter the pin: ");
 	scanf("%d", &PIN);	
 	
-	a = PIN/10000;
+	a = (PIN/10000)%10;
 	b = (PIN/1000)%10;
 	c = (PIN/100)%10;
 	d = (PIN/10)%10;
