@@ -1,0 +1,13 @@
+You are building the core memory management system for a Linux machine operating on strict hardware limits.
+
+
+● The Task: Ask the user to input the RAM requirements (in Megabytes) for three separate applications, followed by a single character priority code for each: 'S' (System), 'G' (Gaming), and 'B' (Background).
+
+
+● The Math: The system has exactly 4096 MB of total RAM. You must calculate the total memory requested.
+
+
+● The Filter: If the total exceeds 4096 MB, your C engine must sequentially kill the lowest priority processes first (killing 'B', then 'G') until the remaining memory fits inside the 4096 MB limit.
+
+
+● The Trap: You cannot use arrays or loops to sort them. You must use nested if-else architecture and temporary variables to evaluate which process lives and which gets a "Segmentation Fault: Out of Memory" print statement.

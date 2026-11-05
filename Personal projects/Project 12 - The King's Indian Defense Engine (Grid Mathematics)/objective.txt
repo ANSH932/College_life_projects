@@ -1,0 +1,11 @@
+You mathematically mapped a Knight's strike earlier. Now you are building the logic to detect a dual-threat "Check" against a King on an 8x8 grid.
+
+
+● The Task: Ask the user for the X and Y coordinates of three pieces: a White King, a Black
+Rook, and a Black Bishop.
+
+
+● The Math: The King is in Check if it falls in the path of either piece. A Rook strikes in straight lines (the X coordinates match, OR the Y coordinates match). A Bishop strikes on pure diagonals (the absolute difference between the X coordinates exactly equals the absolute difference between the Y coordinates).
+
+
+● The Trap: You must calculate all of this in a single, massive logical gate using &&, ||, and abs(). If the King is under fire, output which specific piece is threatening it. If both are, output "CRITICAL: Double Check".
