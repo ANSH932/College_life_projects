@@ -1,0 +1,5 @@
+The Task: Build a switch case main menu with two options: "1. Scan New Transaction" and "2. Shut Down Engine". If the user chooses option 1, ask them for three integers: Transfer Amount (in Rs), Time of Transfer (0 to 23 hours), and Daily Transaction Count. If they choose option 2, print a safe termination message. You must also include a default case to catch invalid menu inputs.
+
+The Logic: A transaction is fraudulent if it trips any of three alarms: The amount is massive (greater than 100,000), OR it is a midnight stealth transfer (amount greater than 20,000 AND time is between 1 and 4 AM), OR the account is spamming transfers (daily count greater than 10).
+
+The Trap: You must evaluate all three threat vectors inside a single, massive logical gate using && and ||. You are restricted to exactly one if block and one else block inside your first case. Absolutely no flag variables, no nested else if conditions, and—to maintain your security protocol—zero real names or personal account details typed into the college computer.
