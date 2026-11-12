@@ -1,10 +1,10 @@
-#include <sdtio.h>
-#include <unistdh.h>
+#include <stdio.h>
+#include <unistd.h>
 int main(){
 	int user, amount, time, count;
 	printf("1. Scan the Transaction\n2. Shutdown the Engine\nEnter the number here: ");
 	scanf("%d", &user);
-	switch user{
+	switch (user){
 		case 1:
 			printf("Enter the amount of transaction: ");
 			scanf("%d", &amount);

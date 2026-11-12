@@ -43,7 +43,7 @@ int main(){
 							printf("Enter the color of the pawn (B - Black and W - White): ");
 							scanf(" %c", &color);
 							color = tolower(color);
-							if (f1==f2 && ((color=='w' && ((r1=='2' && (r2=='4' || r2=='3')) || r1-r2==-1)) || (color=='b' && ((r1=='7' && (r2=='6' || r2=='5')) || r1-r2==1)))) {
+							if (f1==f2 && ((r1!='1' && color=='w' && ((r1=='2' && (r2=='4' || r2=='3')) || r1-r2==-1)) || (r1!='8' && color=='b' && ((r1=='7' && (r2=='6' || r2=='5')) || r1-r2==1)))) {
 								printf("Valid Move\n");
 								sleep(2);
 								return 0;
